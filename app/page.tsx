@@ -15,9 +15,9 @@ export default function Home() {
   return (
     <main>
       <header className="header">
-        <a className="brand" href="#top" aria-label="RapidCare home"><span>✚</span> RAPID<span>CARE</span></a>
-        <nav aria-label="Main navigation"><a href="#services">Services</a><a href="#about">Why us</a><a href="#request">Request ride</a></nav>
-        <a className="call-link" href="tel:+18005550199"><b>24/7 Emergency</b><strong>+1 (800) 555-0199</strong></a>
+        <a className="brand" href="#top" aria-label="RapidCare home"><span>✚</span><i>RAPID</i><i>CARE</i><small>AMBULANCE SERVICE</small></a>
+        <nav aria-label="Main navigation"><a href="#services">Services</a><a href="#about">Why RapidCare</a><a href="#request">Book a transfer</a></nav>
+        <div className="header-actions"><a className="header-appointment" href="#request">Schedule a ride <span>→</span></a><a className="call-link" href="tel:+18005550199"><span className="phone-icon">⌕</span><span><b>24/7 EMERGENCY LINE</b><strong>+1 (800) 555-0199</strong></span></a></div>
       </header>
 
       <section className="hero" id="top">

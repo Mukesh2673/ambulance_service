@@ -2,6 +2,7 @@ import { BookingForm } from "../components/booking-form";
 import { Header, Footer } from "../components/chrome";
 import { Hero } from "../components/hero";
 import { CareSections } from "../components/care-sections";
+import { ScrollEffects } from "../components/scroll-effects";
 
 export default function Home() {
   const structuredData = {
@@ -17,6 +18,7 @@ export default function Home() {
 
   return <main>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+    <ScrollEffects />
     <Header />
     <Hero />
     <CareSections />
@@ -29,6 +31,15 @@ export default function Home() {
           <div className="emergency-note"><b>Emergency?</b> For life-threatening situations, call <a href="tel:+18005550199">+1 (800) 555-0199</a> now.</div>
         </div>
         <BookingForm />
+      </div>
+    </section>
+    <section className="cta-band" aria-label="Emergency call to action">
+      <div className="container reveal">
+        <div>
+          <h2>Every second counts. We&apos;re ready when you are.</h2>
+          <p>Speak with a live coordinator now — no menus, no hold music. Emergency dispatch and planned transport, around the clock.</p>
+        </div>
+        <a className="button button-light" href="tel:+18005550199">Call +1 (800) 555-0199 <span>→</span></a>
       </div>
     </section>
     <Footer />
